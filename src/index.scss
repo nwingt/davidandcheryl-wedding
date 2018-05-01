@@ -1,0 +1,37 @@
+@keyframes bg-animation {
+  0% {
+    background-color: #FEE140;
+  }
+  50% {
+    background-color: #E0C3FC;
+  }
+  100% {
+    background-color: #FA709A;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: sans-serif;
+
+  height: 100vh;
+  width: 100vw;
+
+  background: {
+    image: url('./img/bg.jpg');
+    position: center bottom;
+    size: cover;
+    repeat: no-repeat;
+    blend-mode: multiply;
+  }
+
+  animation: {
+    name: bg-animation;
+    duration: 5s; 
+    timing-function: linear;
+    direction: alternate;
+    iteration-count: infinite;
+  }
+}

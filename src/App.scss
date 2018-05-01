@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .countdown-display {
+    color: white;
+    font-weight: 900;
+    font-size: 10vh;
+    text-shadow: 0 0 5px #00000080;
+
+    > span {
+      display: block;
+    }
+  }
+}
