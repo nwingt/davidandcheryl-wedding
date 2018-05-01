@@ -15,10 +15,10 @@ class App extends Component {
       // Render a countdown
       return (
         <div className="countdown-display">
-          <span className="value">{days}</span><span className="unit">天</span><br/>
-          <span className="value">{hours}</span><span className="unit">小時</span><br/>
-          <span className="value">{minutes}</span><span className="unit">分鐘</span><br/>
-          <span className="value">{seconds}</span><span className="unit">秒</span><br/>
+          <div><span className="value">{days}</span><span className="unit">天</span></div>
+          <div><span className="value">{hours}</span><span className="unit">小時</span></div>
+          <div><span className="value">{minutes}</span><span className="unit">分鐘</span></div>
+          <div><span className="value">{seconds}</span><span className="unit">秒</span></div>
         </div>
       );
     }

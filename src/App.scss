@@ -11,15 +11,23 @@
     color: white;
     
     .value {
+      display: inline-block;
+
       letter-spacing: 0;
 
-      font-size: 20vh;
+      font-family: "mplus-1m", monospace;
+      font-size: 16vh;
       font-weight: 900;
       line-height: 0.9;
     }
     
     .unit {
-      font-size: 4vh;
+      display: inline-block;
+
+      transform: translateY(-0.3vh);
+
+      font-family: "source-han-sans-traditional", sans-serif;
+      font-size: 3vh;
       font-weight: 300;
       line-height: 1;
     }
