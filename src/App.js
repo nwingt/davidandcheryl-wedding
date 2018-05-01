@@ -3,6 +3,8 @@ import Countdown from 'react-countdown-now';
  
 import './App.css';
 
+const BIG_DAY = new Date('2020-02-22T13:00:00+08:00');
+
 class App extends Component {
 
   _renderCountdown = ({ days, hours, minutes, seconds, completed }) => {
@@ -26,7 +28,7 @@ class App extends Component {
     return (
       <div className="App">
         <Countdown
-          date={new Date('2020-02-22T13:00:00+0800')}
+          date={BIG_DAY}
           renderer={this._renderCountdown}
         />
       </div>
