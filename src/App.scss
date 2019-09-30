@@ -1,13 +1,13 @@
 .App {
   display: flex;
-  overflow: hidden;
-  align-items: center;
+  flex-direction: column;
 
   height: 100vh;
-  max-height: 100vh;
-  padding-left: 4vw;
+  min-height: 100vh;
   
   .countdown-display {
+    margin: 1rem;
+
     color: white;
     
     .value {
@@ -30,6 +30,45 @@
       font-size: 3vh;
       font-weight: 300;
       line-height: 1;
+    }
+  }
+
+  .likecoin-button-wrapper {
+    margin: 1rem;
+  }
+
+  @media screen and (min-width: 769px) {
+    flex-direction: row;
+    align-items: center;
+
+    .countdown-display {
+      margin-left: 4vw;
+    }
+
+    .likecoin-embed {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.likecoin-like-button {
+  width: 100%;
+  max-width: 485px;
+  max-height: 256px;
+  margin: 0;
+
+  > div {
+    position: relative;
+    padding-top: 49.48454%;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 }

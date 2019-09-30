@@ -7,6 +7,10 @@ const BIG_DAY = new Date('2020-02-22T13:00:00+08:00');
 
 class App extends Component {
 
+  state = {
+    likeCoinButtonSrc: `https://button.like.co/in/embed/ngwingtat/button?referrer=${encodeURIComponent('https://ngwingt.at')}`
+  }
+
   _renderCountdown = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
       // Render a completed state
@@ -31,6 +35,13 @@ class App extends Component {
           date={BIG_DAY}
           renderer={this._renderCountdown}
         />
+        <div className="likecoin-button-wrapper">
+          <div className="likecoin-embed likecoin-like-button">
+            <div>
+              <iframe scrolling="no" frameborder="0" src={this.state.likeCoinButtonSrc} />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
