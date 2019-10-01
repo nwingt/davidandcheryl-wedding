@@ -11,7 +11,7 @@ class App extends Component {
     likeCoinButtonSrc: `https://button.like.co/in/embed/ngwingtat/button?referrer=${encodeURIComponent('https://ngwingt.at')}`
   }
 
-  _renderCountdown = ({ days, hours, minutes, seconds, completed }) => {
+  _renderCountdown = ({ days, completed }) => {
     if (completed) {
       // Render a completed state
       return null;
@@ -19,10 +19,7 @@ class App extends Component {
       // Render a countdown
       return (
         <div className="countdown-display">
-          <div><span className="value">{days}</span><span className="unit">天</span></div>
-          <div><span className="value">{hours}</span><span className="unit">小時</span></div>
-          <div><span className="value">{minutes}</span><span className="unit">分鐘</span></div>
-          <div><span className="value">{seconds}</span><span className="unit">秒</span></div>
+          <span className="value">{days}</span> <span className="unit">days to go</span>
         </div>
       );
     }
@@ -31,17 +28,37 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Countdown
-          date={BIG_DAY}
-          renderer={this._renderCountdown}
-        />
-        <div className="likecoin-button-wrapper">
-          <div className="likecoin-embed likecoin-like-button">
-            <div>
-              <iframe scrolling="no" frameborder="0" src={this.state.likeCoinButtonSrc} />
+        <div>
+          <div className="hero">
+            <div class="spacer" />
+            <Countdown
+              date={BIG_DAY}
+              renderer={this._renderCountdown}
+            />
+            <div className="event-details">
+              <div className="event-details__date">2020.02.22</div>
+              <div className="event-details__time">2:00PM</div>
             </div>
           </div>
         </div>
+
+        <div className="event-details">
+          <div className="event-details__venue">Methodist International Church</div>
+          <div className="event-details__address">
+            Sanctuary, 1-2/F,
+            271 Queen's Road East,
+            Wan Chai, Hong Kong
+          </div>
+
+          <div className="likecoin-button-wrapper">
+            <div className="likecoin-embed likecoin-like-button">
+              <div>
+                <iframe scrolling="no" frameborder="0" src={this.state.likeCoinButtonSrc} />
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     );
   }
