@@ -30,7 +30,12 @@ class App extends Component {
       <div className="App">
         <div>
           <div className="hero">
-            <div className="spacer" />
+            <div className="spacer">
+              <div className="event-title">
+                <span>The Wedding of</span><br />
+                David &amp; Cheryl
+              </div>
+            </div>
             <Countdown
               date={BIG_DAY}
               renderer={this._renderCountdown}

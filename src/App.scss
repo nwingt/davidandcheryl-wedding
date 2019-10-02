@@ -17,6 +17,7 @@
     box-sizing: border-box;
 
     text-align: center;
+    text-shadow: 2px 2px 6px rgba(black, 0.2);
   }
   
   .countdown-display {
@@ -29,7 +30,7 @@
     .value {
       display: inline-block;
 
-      font-size: 6vh;
+      font-size: 4vh;
       font-weight: 900;
       line-height: 0.9;
       letter-spacing: 0;
@@ -38,7 +39,7 @@
     .unit {
       display: inline-block;
       
-      font-size: 3vh;      
+      font-size: 2vh;      
       font-weight: 400;
       line-height: 1;
     }
@@ -74,12 +75,25 @@
 }
 
 .spacer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
 }
 
 .event {
+  &-title {
+    > span {
+      font-size: 6vmin;
+    }
+
+    font-size: 14vmin;
+    font-family: mrblaketon-pro, sans-serif;
+
+    line-height: 0.9;
+  }
   &-date {
-    font-size: 8vh;
+    font-size: 10vh;
     font-family: cheap-pine, sans-serif;
   }
 
