@@ -3,16 +3,13 @@
 
   width: 100vw;
   max-width: 100vw;
-  min-height: 100vh;
 
   font-family: cheap-pine-sans, sans-serif;
 
   .hero {
     display: flex;
     flex-direction: column;
-    
-    min-height: 100vh;
-    
+
     padding: 1rem;
     box-sizing: border-box;
 

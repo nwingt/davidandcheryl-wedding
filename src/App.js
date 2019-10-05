@@ -8,7 +8,8 @@ const BIG_DAY = new Date('2020-02-22T13:00:00+08:00');
 class App extends Component {
 
   state = {
-    likeCoinButtonSrc: `https://button.like.co/in/embed/ngwingtat/button?referrer=${encodeURIComponent('https://ngwingt.at')}`
+    likeCoinButtonSrc: `https://button.like.co/in/embed/ngwingtat/button?referrer=${encodeURIComponent('https://ngwingt.at')}`,
+    heroHeight: `${window.innerHeight}px`,
   }
 
   _renderCountdown = ({ days, completed }) => {
@@ -29,7 +30,7 @@ class App extends Component {
     return (
       <div className="App">
         <div>
-          <div className="hero">
+          <div className="hero" style={{ minHeight: this.state.heroHeight}}>
             <div className="spacer">
               <div className="event-title">
                 <span>The Wedding of</span><br />
