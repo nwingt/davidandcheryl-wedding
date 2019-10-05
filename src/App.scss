@@ -99,10 +99,14 @@
   &-title {
     > span {
       font-size: 6vmin;
+
+      text-shadow: 1px 1px 3px rgba(black, 0.5);
     }
 
     font-size: 14vmin;
     font-family: mrblaketon-pro, sans-serif;
+
+    text-shadow: 2px 2px 6px rgba(black, 0.3);
 
     line-height: 0.9;
   }
