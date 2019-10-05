@@ -20,7 +20,7 @@ class App extends Component {
       // Render a countdown
       return (
         <div className="countdown-display">
-          <span className="value">{days}</span><br/><span className="unit">days to go</span>
+          <span className="value">{days}</span><br/><span className="unit">days to launch</span>
         </div>
       );
     }
@@ -37,30 +37,15 @@ class App extends Component {
                 David &amp; Cheryl
               </div>
             </div>
+            <div>
+              <div className="event-date">2020.02.22</div>
+              <div className="event-time">2:00PM</div>
+            </div>
             <Countdown
               date={BIG_DAY}
               renderer={this._renderCountdown}
             />
-            <div>
-              <div className="event-date">2020.02.22</div>
-              <div className="event-time">2:00PM</div>
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="angle-double-down"
-                role="img"
-                width="2vh"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 320 512"
-                style={{ margin: '2vh' }}
-              >
-                <path
-                  fill="currentColor"
-                  d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z"
-                />
-              </svg>
-            </div>
+            <div className="scroll-indicator">🚀</div>
           </div>
         </div>
 

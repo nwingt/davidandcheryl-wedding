@@ -39,21 +39,23 @@
 
     text-align: center;
 
-    font-family: corner-store-jf, sans-serif;
-    
+    font-style: italic;
+
     .value {
       display: inline-block;
 
-      font-size: 4vh;
-      font-weight: 900;
+      font-family: mono45-headline, monospace;
+      font-size: 6vmax;
+      font-weight: 400;
       line-height: 0.9;
       letter-spacing: 0;
     }
     
     .unit {
       display: inline-block;
-      
-      font-size: 2vh;      
+
+      font-family: omnes-pro, sans-serif;
+      font-size: 2vmax;
       font-weight: 400;
       line-height: 1;
     }
@@ -97,26 +99,37 @@
 
 .event {
   &-title {
-    > span {
-      font-size: 6vmin;
-
-      text-shadow: 1px 1px 3px rgba(black, 0.5);
-    }
-
-    font-size: 14vmin;
-    font-family: mrblaketon-pro, sans-serif;
+    font-size: 12vmin;
+    font-family: bc-alphapipe, sans-serif;
+    
+    font-weight: 600;
+    font-style: italic;
 
     text-shadow: 2px 2px 6px rgba(black, 0.3);
 
     line-height: 0.9;
+
+    margin-bottom: 2rem;
+
+    > span {
+      font-size: 5vmin;
+      font-weight: 400;
+
+      text-shadow: 1px 1px 3px rgba(black, 0.5);
+    }
   }
   &-date {
-    font-size: 10vh;
-    font-family: cheap-pine, sans-serif;
+    font-size: 10vmin;
+    font-family: mono45-headline, monospace;
+    font-weight: 500;
+    font-style: italic;
   }
 
   &-time {
-    font-size: 6vh;
+    font-size: 8vmin;
+    font-family: mono45-headline, monospace;
+    font-weight: 500;
+    font-style: italic;
   }
 }
 
@@ -127,17 +140,20 @@
   box-sizing: border-box;
   
   text-align: center;
+  font-family: omnes-pro, sans-serif;
   
   &__venue {
     font-size: 3vh;
-    font-family: parkside, cursive;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   &__address {
     font-size: 2vh;
-    font-family: capucine-web, sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-style: italic;
   }
+}
+
+.scroll-indicator {
+  font-size: 4vh;
 }
