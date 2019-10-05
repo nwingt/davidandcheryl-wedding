@@ -15,6 +15,23 @@
 
     text-align: center;
     text-shadow: 2px 2px 6px rgba(black, 0.2);
+
+    animation: {
+      name: bg-animation;
+      duration: 5s;
+      timing-function: linear;
+      direction: alternate;
+      iteration-count: infinite;
+    };
+  
+    background: {
+      position: center bottom;
+  
+      image: url('./img/bg.jpg');
+      size: cover;
+      repeat: no-repeat;
+      blend-mode: soft-light;
+    };
   }
   
   .countdown-display {
