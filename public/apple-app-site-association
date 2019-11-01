@@ -3,6 +3,12 @@
     "apps": [],
     "details": [
       {
+        "appID": "76UMR894HH.com.oice",
+        "paths": [
+          "*"
+        ]
+      },
+      {
         "appID": "76UMR894HH.co.like.LikeCoin",
         "paths": [
           "*"
